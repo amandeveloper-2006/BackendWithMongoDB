@@ -1,8 +1,10 @@
+
+import 'dotenv/config';  // Load environment variables from .env file
 import express from 'express'
 
 const app = express();
-
-const port = 3000
+const port = process.env.PORT || 3000;  // Use the PORT from .env file or default to 3000
+//const port = 3000
 
 // send a response to the client
 
